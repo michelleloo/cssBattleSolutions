@@ -1,0 +1,43 @@
+/* flex boxes */
+<body>
+<div class="back">
+<div class="top-">  
+  <div class="a"></div>
+  <div class="b"></div>
+</div>
+<div class="c"></div>
+</div>>
+</body>
+<style>
+  body{
+    background-color:#E3516E;
+  }
+  .back{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+  }
+  .top-{
+    display:flex;
+  }
+  .a{
+    background-color:#51B5A9;
+    width:100px;
+    height:100px;
+    border-radius: 100px 0px 0px 0px;
+  }
+  .b{
+    background-color:#FADE8B;
+    width:100px;
+    height:100px;
+    border-radius: 0px 100px 0px 0px;
+  }
+  .c{
+    background-color:#F7F3D7;
+    width:100px;
+    height:100px;
+    border-radius: 0px 0px 0px 100px;
+  }
+</style>>

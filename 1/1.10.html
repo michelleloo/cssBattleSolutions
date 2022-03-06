@@ -1,0 +1,67 @@
+<div class="rectangle"></div>
+<div class="circle"></div>
+<div class="circle inner"></div>
+<div class="circle flipped"></div>
+<div class="circle inner flipped"></div>
+<div class="circle top"></div>
+<div class="circle inner top-inner"></div>
+<style>
+  body{
+    background: #62306D
+  }
+  .rectangle {
+    width: 300px;
+    height: 100px;
+    position:absolute;
+    margin-left:-150px;
+    background:#063;
+    bottom:0px;
+    left:50%;
+    background: #F7EC7D;
+  }
+  .rectangle:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    top: -100px;
+	border: 50px;
+	background: #F7EC7D;
+    }
+  .circle{
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    margin-left:-150px;
+    left:55%;
+    top: 170px;
+    background: #E38F66;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .inner{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    margin-left:-150px;
+    left:50%;
+    top: 50%;
+    background: #AA445F;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  .flipped{
+    margin-left:50px;
+  }
+  .top{
+    top: 70px;
+    margin-left: -50px;
+    background: #AA445F;
+  }
+  .top-inner{
+    top: 50px;
+    margin-left: -50px;
+    background: #E38F66;
+  }
+</style>

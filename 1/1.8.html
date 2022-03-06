@@ -1,0 +1,80 @@
+<div class="a"></div>
+<div class="top-row">
+ <div class="circle"></div>
+ <div class="circle"></div>
+ <div class="circle"></div>
+ <div class="circle"></div>
+</div>
+<div class="bot-row">
+ <div class="circle flipped"></div>
+ <div class="circle flipped"></div>
+ <div class="circle flipped"></div>
+</div>
+<div class="gradient"></div>
+<div id="stick"></div>
+
+<style>
+  body{
+    padding: 42px 122px 0;
+    background: #6592CF;
+  }
+
+  .a{
+    width: 140px;
+    height: 200px;
+    background: #060F55;
+    position:absolute;
+    border-radius: 0 0 70px 70px;
+  }
+  .top-row{
+    width: 140px;
+    height: 20px;
+    background: #6592CF;
+    z-index:2;
+    display:flex;
+    gap: 20px;
+    position: absolute;
+  }
+  .bot-row{
+    width: 140px;
+    height: 20px;
+    background: #060F55;
+    z-index:2;
+    display:flex;
+    justify-content:space-evenly;
+    position: absolute;
+    top: 140px
+  }
+  .circle{
+      width: 20px;
+      height: 20px;
+      background: #060F55;
+      border-radius: 50% 50% 0 0;
+      z-index: 3;
+  }
+  .flipped{
+    border-radius:  0 0 50% 50%;
+    background: #6592CF;
+  }
+  .gradient{
+    width: 140px;
+    height: 110px;
+    top:50;
+    position:absolute;
+    background: repeating-linear-gradient(
+      to right,
+      #060F55 0px,
+      #060F55 20px,
+      #6592CF 20px,
+      #6592CF 40px);
+  }
+  #stick{
+    width: 20px;
+    height: 60px;
+    z-index: 1;
+    top: 80vh;
+    left: 190px;
+    position:absolute;
+    background: #060F55;
+  }
+</style>

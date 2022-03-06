@@ -1,0 +1,58 @@
+<div class="diamond"> </div>
+<div class="circle"> </div>
+<style>
+  body {
+    background:linear-gradient(180deg,
+     #222730 25%, 
+     #4CAAB3 25% 75%, 
+     #222730 75% 100%);}
+  .diamond{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #4CAAB3;
+    border: 50px solid #222730;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-clip: content-box;
+  }
+  .circle{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    background: #393E46;
+    z-index: 10;
+    width:50px;
+    height:50px;
+  }
+</style><div class="square"> 
+<div class="diamond"> </div>
+</div>
+
+<style>
+  body {
+	background: #222730;
+
+  }
+  .square{
+    display: flex;
+    align-items: center;
+    
+  }
+  .diamond{
+    background: #4CAAB3;
+    width:100px;
+    height:150px;
+  }
+  .diamond:after{
+    content: '';
+    border-width: 50px 50px 50px 50px;
+    border-style: solid;
+    border-color: blue orange pink red;
+   
+  }
+
+</style>
